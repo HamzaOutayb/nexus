@@ -10,6 +10,16 @@ A full-stack e-commerce marketplace built with **Spring Boot microservices, Angu
 - [CI/CD and SonarQube](#cicd-and-sonarqube)
 - [Project Structure](#project-structure)
 
+## Environment setup
+
+Copy the example environment file before starting the stack:
+
+```sh
+cp .env.example .env
+```
+
+Review and replace the placeholder values in `.env` with the real secrets for your environment. The Docker Compose stack reads those values and falls back to the safe local defaults defined in [docker-compose.yml](docker-compose.yml) when a variable is unset.
+
 ## Overview
 
 Buy 01 is a marketplace application designed around independently deployable backend services. Each service has a specific responsibility, while the API Gateway provides a single entry point for frontend requests.

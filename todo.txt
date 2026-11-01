@@ -1,2 +1,2 @@
-
+put all sensiteve variables into .env and default in dokerompose put them all in the dokercompose as default 
 understand the order service 4:10
